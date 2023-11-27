@@ -4,15 +4,15 @@ export default function App() {
   return (
     <View style={styles.appContainer}>
       <View>
-        <Text>Welcome back</Text>
-        <Text>
+        <Text style={styles.headerText}>Welcome back</Text>
+        <Text style={styles.subText}>
           Glad to see you back, please login into your account to continue
         </Text>
       </View>
       <View style={styles.inputContainer}>
         <TextInput style={styles.textInput} placeholder="Email Address"/>
         <TextInput style={styles.textInput} placeholder="Password"/>
-        <Text>Or sign in with</Text>
+        <Text style={styles.subText}>Or sign in with</Text>
       </View>
       <View>
         <Button title="Sign in with Google" />
@@ -32,15 +32,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   headerText: {
-
+    color: '#000000',
+    fontSize: 24,
+    fontWeight: "bold",
+    // fontFamily: arial,
   },
   inputContainer: {
     // flex: 1,
-    flexDirection: "column",
-    justifyContent: "space-around",
+    // flexDirection: "column",
+    // justifyContent: "space-around",
     margin: 20,
     alignItems: 'center',
-    gap: 20,
   },
   textInput: {
     borderWidth: 1,
@@ -48,5 +50,10 @@ const styles = StyleSheet.create({
     width: "100%",
     padding: 14,
     borderRadius: 15,
+    margin: 15,
+  },
+  subText: {
+    fontSize: 16,
+    
   }
 });
