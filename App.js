@@ -12,7 +12,7 @@ export default function App() {
 const styles = StyleSheet.create({
   rootScreen: {
     flex: 1,
-    paddingTop: 84,
+    paddingTop: 60,
     margin: 24,
     // paddingHorizontal: 16,
   },
