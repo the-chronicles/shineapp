@@ -4,16 +4,16 @@ import SubText from "../components/ui/SubText";
 import SecondaryButton from "../components/Buttons/SecondaryButton";
 import PrimaryButton from "../components/Buttons/PrimaryButton";
 import TertiaryButton from "../components/Buttons/TertiaryButton";
+import { Text } from "react-native";
 
 function GettingStarted() {
   return (
     <View style={styles.loginContainer}>
       {/* <AntDesign name="arrowleft" size={24} color="black" /> */}
       <View>
-        <Title>Welcome Back</Title>
+        <Title>Getting Started</Title>
         <SubText>
-          Glad to see you back, please login into you account to continue
-        </SubText>
+        Don't worry — we won't share your contact with anyone😉        </SubText>
       </View>
       <View style={styles.inputContainer}>
         <TextInput

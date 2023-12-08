@@ -2,14 +2,14 @@ import { StyleSheet, Text, TextInput, View } from "react-native";
 import PrimaryButton from "../components/Buttons/PrimaryButton";
 import SecondaryButton from "../components/Buttons/SecondaryButton";
 import TertiaryButton from "../components/Buttons/TertiaryButton";
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign } from "@expo/vector-icons";
 import Title from "../components/ui/Title";
 import SubText from "../components/ui/SubText";
 
 function Login() {
   return (
-      <View style={styles.loginContainer}>
-        {/* <AntDesign name="arrowleft" size={24} color="black" /> */}
+    <View style={styles.loginContainer}>
+      {/* <AntDesign name="arrowleft" size={24} color="black" /> */}
       <View>
         <Title>Welcome Back</Title>
         <SubText>
@@ -35,16 +35,20 @@ function Login() {
       <Text style={styles.signText}>Or sign in with</Text>
       <View>
         <View>
-          <SecondaryButton>Sign in with Google</SecondaryButton>
+          <SecondaryButton>
+            <AntDesign name="google" size={18} color="black" />
+            Sign in with Google
+          </SecondaryButton>
         </View>
         <View>
           <PrimaryButton>
-          <AntDesign name="apple1" size={18} color="white" />
-            Sign in with Apple</PrimaryButton>
+            <AntDesign name="apple1" size={18} color="white" />
+            Sign in with Apple
+          </PrimaryButton>
         </View>
       </View>
       <View style={styles.buttonContainer}>
-      <Text>
+        <Text>
           By tapping sign up with Apple, Google or Facebook, you agree to the
           Terms Of Service and Privacy Policy
         </Text>
